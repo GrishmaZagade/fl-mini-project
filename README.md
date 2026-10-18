@@ -17,9 +17,6 @@ A Mamdani Fuzzy Inference System that optimizes wash cycle settings.
 - 27 fuzzy rules
 - Min–max inference, centroid defuzzification
 - Built with HTML5, CSS3 and JavaScript (ES6)
-
-## Live demo
-https://yourusername.github.io/smart-washing-machine-fuzzy-logic/
-
+  
 ## How to run
 Open `index.html` in any browser.
