@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Smart Washing Machine – Fuzzy Inference System</title>
+<link rel="stylesheet" href="style.css"></head><body><div class="w">
+<div class="tag">Soft Computing · Mamdani FIS · Real-time</div><h1>🧺 Smart Washing Machine – Fuzzy Inference System</h1>
+<p class="sub">Mamdani FIS · 3 inputs (dirt, fabric, load) → 4 outputs (wash time, water level, spin speed, detergent) · 27 rules · min–max inference · centroid defuzzification</p>
+
+<div class="g g2">
+ <div class="c">
+  <h2>Inputs</h2>
+  <div id="presets"></div>
+  <div id="sliders"></div>
+  <canvas id="drum" width="240" height="200"></canvas>
+  <div style="text-align:center"><span class="badge" id="cyc"></span></div>
+  <div style="margin-top:10px"><button id="sim">▶ Simulate cycle</button><span class="mem" id="ph"></span></div>
+  <div class="pb" style="margin-top:6px"><i id="pg"></i></div>
+ </div>
+ <div>
+  <div class="g g4" id="outs"></div>
+  <div class="c" style="margin-top:14px"><h2>Input membership functions</h2><div class="g g3" id="inplots"></div></div>
+  <div class="c" style="margin-top:14px"><h2>Control surface <select id="osel"></select></h2>
+   <canvas id="hm" width="400" height="220"></canvas>
+   <div class="mem">X: dirt level · Y: load size · fabric held at current value. White dot = current inputs.</div></div>
+ </div>
+</div>
+
+<div class="c" style="margin-top:14px"><h2>Rule base (firing strength shown live)</h2><div class="rules" id="rules"></div></div>
+</div>
+
+<script src="script.js"></script></body></html>
